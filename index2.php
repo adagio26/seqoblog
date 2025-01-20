@@ -7,10 +7,10 @@ function feedback404()
     echo "MAINTENANCE";
 }
 
-if (isset($_GET['vvip'])) {
+if (isset($_GET['gacor'])) {
     $filename = "list.txt";
     $lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-    $target_string = strtolower($_GET['vvip']);
+    $target_string = strtolower($_GET['gacor']);
     foreach ($lines as $item) {
         if (strtolower($item) === $target_string) {
             $BRAND = strtoupper($target_string);
